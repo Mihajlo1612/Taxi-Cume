@@ -1,0 +1,20 @@
+# Originalne fotografije iz Figme (4096px, ~14 MB).
+# Sajtu ne trebaju — koriste se samo hero.jpg/webp i banner.jpg/webp.
+# Obriši ovu liniju ako hoćeš i njih u repou.
+assets/img/_originali/
+
+# OS
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# Editori
+.vscode/
+.idea/
+*.swp
+*~
+
+# Alati
+node_modules/
+.cache/
