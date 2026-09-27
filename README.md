@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# Taxi-Cume
+Taxi services personal website
+=======
 # Cume Taxi Velika Plana — one-page sajt
 
 Statična stranica napravljena iz Figma dizajna (`Radovi`, node `258:113`).
@@ -129,3 +133,4 @@ usmeriš nameservere kod registra. SSL je automatski na sve tri opcije.
 - **Breakpointi:** 1023 px (tablet, 3→2 kolone) i 767 px (mobilni, 1 kolona + fiksno dugme).
 - **SEO:** `TaxiService` schema.org, OG tagovi, `lang="sr"`, semantični headings.
 - **A11y:** vidljiv focus ring, `aria-label` na ikoničnim dugmadima, kontrast prolazi AA.
+>>>>>>> bc7b710 (Cume Taxi Velika Plana - one-page website)

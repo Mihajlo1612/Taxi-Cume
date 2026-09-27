@@ -9,9 +9,9 @@
      Promeniš broj ovde i on se primenjuje na CELOM sajtu (svi tel: linkovi,
      Viber, i tekst gde god je ispisan stari broj).                         */
   var CONTACT = {
-    tel: '+381638782339',            // bez razmaka — ovo ide u tel:
-    telPretty: '+381 63 878 2339',   // ovako se prikazuje
-    viber: '+381638782339',
+    tel: '',            // bez razmaka — ovo ide u tel:
+    telPretty: '063 408 407',   // ovako se prikazuje
+    viber: '063 408 407',
     email: 'cumetaxi@gmail.com'
   };
 
