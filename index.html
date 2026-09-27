@@ -1,305 +1,482 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cume Taxi Velika Plana — Taksi 24/7 | Putuj duže, putuj jeftinije</title>
-<meta name="description" content="Cume Taxi Velika Plana — gradski i međunarodni prevoz, prevoz do aerodroma, prtljag, pet friendly. Dostupni 24/7. Pozovi 063/408-407.">
-<meta name="theme-color" content="#131313">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Cume Taxi Velika Plana — Taksi 24/7 | Putuj duže, putuj jeftinije
+    </title>
+    <link rel="canonical" href="https://cumetaxi.com/">
+    <meta
+      name="description"
+      content="Cume Taxi Velika Plana — gradski i međunarodni prevoz, prevoz do aerodroma, prtljag, pet friendly. Dostupni 24/7. Pozovi 063/408-407."
+    />
+    <meta name="theme-color" content="#131313" />
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cume Taxi Velika Plana">
-<meta property="og:description" content="Što duže putuješ, manje plaćaš. Taksi prevoz 24/7 — Velika Plana i Krnjevo.">
-<meta property="og:image" content="assets/img/hero.jpg">
-<meta property="og:locale" content="sr_RS">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cume Taxi Velika Plana" />
+    <meta
+      property="og:description"
+      content="Što duže putuješ, manje plaćaš. Taksi prevoz 24/7 — Velika Plana i Krnjevo."
+    />
+    <meta property="og:image" content="assets/img/hero.jpg" />
+    <meta property="og:locale" content="sr_RS" />
 
-<link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css">
+    <link
+      rel="preload"
+      href="assets/fonts/plus-jakarta-sans-latin-600-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/plus-jakarta-sans-latin-ext-600-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TaxiService",
-  "name": "Cume Taxi Velika Plana",
-  "description": "Taksi prevoz 24/7 — gradski, međugradski i međunarodni prevoz, prevoz do aerodroma.",
-  "telephone": "063408407",
-  "email": "cumetaxi@gmail.com",
-  "areaServed": [
-    { "@type": "City", "name": "Velika Plana" },
-    { "@type": "Place", "name": "Krnjevo" }
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Velika Plana",
-    "addressCountry": "RS"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  }
-}
-</script>
-</head>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TaxiService",
+        "name": "Cume Taxi Velika Plana",
+        "description": "Taksi prevoz 24/7 — gradski, međugradski i međunarodni prevoz, prevoz do aerodroma.",
+        "telephone": "063408407",
+        "email": "cumetaxi@gmail.com",
+        "areaServed": [
+          { "@type": "City", "name": "Velika Plana" },
+          { "@type": "Place", "name": "Krnjevo" }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Velika Plana",
+          "addressCountry": "RS"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      }
+    </script>
+  </head>
 
-<body>
+  <body>
+    <!-- ============ SVG sprite: ikonice iz dizajna (Iconify, isti setovi kao u Figmi) ============ -->
+    <svg
+      width="0"
+      height="0"
+      style="position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M13 20V7.83l5.59 5.59L20 12l-8-8l-8 8l1.41 1.41L11 7.83V20z"
+          />
+        </symbol>
+        <symbol id="i-chair" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M5.039 19.346q-.214 0-.357-.143q-.144-.143-.144-.357v-1H4q-.846 0-1.423-.577T2 15.846v-5q0-.632.434-1.066q.433-.434 1.066-.434t1.066.434Q5 10.214 5 10.846v3.5h14v-3.5q0-.632.434-1.066q.433-.434 1.066-.434t1.066.434q.434.434.434 1.066v5q0 .846-.577 1.423T20 17.846h-.538v1q0 .194-.134.347t-.328.153q-.213 0-.357-.143q-.143-.144-.143-.357v-1H5.539v1q0 .214-.144.357q-.143.143-.357.143m.962-6v-2.5q0-.932-.559-1.664Q4.883 8.45 4 8.346V7.231q0-.846.577-1.423T6 5.23h12q.846 0 1.423.577T20 7.23v1.115q-.889.1-1.444.828Q18 9.902 18 10.846v2.5z"
+          />
+        </symbol>
+        <symbol id="i-global" viewBox="0 0 24 24">
+          <g fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M2.02783 11.25C2.41136 6.07745 6.72957 2 12.0001 2C11.1693 2 10.4295 2.36421 9.82093 2.92113C9.21541 3.47525 8.70371 4.24878 8.28983 5.16315C7.87352 6.08292 7.55013 7.15868 7.33126 8.32611C7.1558 9.26194 7.04903 10.2485 7.01344 11.25H2.02783ZM2.02783 12.75H7.01344C7.04903 13.7515 7.1558 14.7381 7.33126 15.6739C7.55013 16.8413 7.87351 17.9171 8.28983 18.8368C8.70371 19.7512 9.21541 20.5247 9.82093 21.0789C10.4295 21.6358 11.1693 22 12.0001 22C6.72957 22 2.41136 17.9226 2.02783 12.75Z"
+              clip-rule="evenodd"
+            />
+            <path
+              d="M12.0001 3.39535C11.7251 3.39535 11.3699 3.51236 10.9567 3.89042C10.5406 4.27126 10.1239 4.86815 9.75585 5.68137C9.3902 6.4892 9.09329 7.46441 8.88897 8.55419C8.72806 9.41242 8.62824 10.3222 8.59321 11.25H15.4071C15.372 10.3222 15.2722 9.41242 15.1113 8.5542C14.907 7.46441 14.6101 6.48921 14.2444 5.68137C13.8763 4.86815 13.4597 4.27126 13.0435 3.89042C12.6304 3.51236 12.2751 3.39535 12.0001 3.39535Z"
+            />
+            <path
+              d="M8.88897 15.4458C9.09329 16.5356 9.3902 17.5108 9.75585 18.3186C10.1239 19.1319 10.5406 19.7287 10.9567 20.1096C11.3698 20.4876 11.7251 20.6047 12.0001 20.6047C12.2751 20.6047 12.6304 20.4876 13.0435 20.1096C13.4597 19.7287 13.8763 19.1319 14.2444 18.3186C14.6101 17.5108 14.907 16.5356 15.1113 15.4458C15.2722 14.5876 15.372 13.6778 15.4071 12.75H8.59321C8.62824 13.6778 8.72806 14.5876 8.88897 15.4458Z"
+            />
+            <path
+              d="M12.0001 2C12.831 2 13.5708 2.36421 14.1793 2.92113C14.7849 3.47525 15.2966 4.24878 15.7104 5.16315C16.1267 6.08292 16.4501 7.15868 16.669 8.32612C16.8445 9.26194 16.9512 10.2485 16.9868 11.25H21.9724C21.5889 6.07745 17.2707 2 12.0001 2Z"
+            />
+            <path
+              d="M16.669 15.6739C16.4501 16.8413 16.1267 17.9171 15.7104 18.8368C15.2966 19.7512 14.7849 20.5247 14.1793 21.0789C13.5708 21.6358 12.831 22 12.0001 22C17.2707 22 21.5889 17.9226 21.9724 12.75H16.9868C16.9512 13.7515 16.8445 14.7381 16.669 15.6739Z"
+            />
+          </g>
+        </symbol>
+        <symbol id="i-plane" viewBox="0 0 14 14">
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M13.06.941a1.47 1.47 0 0 0-1.025-.45c-.382-.012-.791.108-1.22.322c-.819.41-1.775 1.2-2.861 2.274c-.852-.48-2.165-1.006-3.403-1.316C3.89 1.606 3.236 1.5 2.678 1.5c-.545 0-1.06.102-1.379.42a.94.94 0 0 0-.279.768c.023.27.142.543.305.804c.326.522.88 1.072 1.455 1.565c.579.496 1.197.95 1.67 1.278c.216.15.402.275.541.366l-.675.675a7.6 7.6 0 0 0-1.915.072c-.719.13-1.482.418-1.8 1.055a.94.94 0 0 0 .046.96c.167.266.449.482.754.656c.556.317 1.275.54 1.82.662c.121.544.344 1.263.661 1.82c.174.304.39.586.657.753c.283.178.614.22.96.047c.636-.318.925-1.082 1.054-1.8c.123-.683.118-1.41.072-1.916L7.3 9.01c.091.139.216.325.367.542c.328.472.781 1.09 1.278 1.67c.493.575 1.042 1.128 1.565 1.454c.26.163.534.282.804.305a.94.94 0 0 0 .768-.279c.318-.318.42-.834.42-1.378c0-.558-.108-1.212-.273-1.874c-.31-1.238-.836-2.551-1.315-3.402c1.074-1.087 1.864-2.043 2.274-2.862c.214-.428.333-.837.321-1.22a1.47 1.47 0 0 0-.45-1.024"
+            clip-rule="evenodd"
+          />
+        </symbol>
+        <symbol id="i-luggage" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M7 21q-.825 0-1.412-.587T5 19V8q0-.825.588-1.412T7 6h2V4q0-.825.588-1.412T11 2h2q.825 0 1.413.588T15 4v2h2q.825 0 1.413.588T19 8v11q0 .825-.587 1.413T17 21q0 .425-.288.713T16 22t-.712-.288T15 21H9q0 .425-.288.713T8 22t-.712-.288T7 21m2-3h2V9H9zm4 0h2V9h-2zM11 6h2V4h-2z"
+          />
+        </symbol>
+        <symbol id="i-pet" viewBox="0 0 14 14">
+          <path
+            fill="currentColor"
+            d="M9.413.002c-1.244.144-1.95 1.507-2.04 2.692c-.147 1.052.313 2.396 1.419 2.638c.958.086 1.72-.815 2.034-1.674c.37-1.075.38-2.51-.517-3.315a1.34 1.34 0 0 0-.896-.34M4.34.06C3.305.133 2.775 1.336 2.847 2.3c.009 1.291.717 2.743 2.01 3.05c.964.103 1.607-.919 1.667-1.813C6.647 2.17 6.04.513 4.668.1A1.1 1.1 0 0 0 4.34.059m8.315 4.145c-1.388.101-2.266 1.581-2.327 2.918c-.073.87.49 1.966 1.437 1.906c1.417-.15 2.27-1.73 2.235-3.1c-.009-.79-.51-1.691-1.345-1.724M.011 6.009C-.118 7.49.919 9.165 2.425 9.258c.913-.061 1.343-1.121 1.238-1.96c-.083-1.238-.91-2.505-1.985-2.67S-.006 5.222.01 6.008m7.148 1.263c-1.412.004-2.702.927-3.393 2.176c-.578.933-1.05 1.99-1.14 3.105c.02.86.84 1.576 1.663 1.405c1.173-.153 2.222-.968 3.443-.815c1.014.081 1.85.868 2.875.856c.994.037 1.567-1.102 1.188-1.995c-.408-1.277-1.199-2.389-2.048-3.39c-.677-.738-1.565-1.374-2.588-1.342"
+          />
+        </symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M15.25 13.5h-4a.75.75 0 0 1-.75-.75v-6a.75.75 0 0 1 1.5 0V12h3.25a.75.75 0 0 1 0 1.5M12 2C6.478 2 2 6.478 2 12s4.478 10 10 10s10-4.478 10-10S17.522 2 12 2"
+          />
+        </symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24">
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-dasharray="62"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"
+          >
+            <animate
+              fill="freeze"
+              attributeName="stroke-dashoffset"
+              dur="0.6s"
+              values="62;0"
+            />
+          </path>
+        </symbol>
+        <symbol id="i-email" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"
+          />
+        </symbol>
+      </defs>
+    </svg>
 
-<!-- ============ SVG sprite: ikonice iz dizajna (Iconify, isti setovi kao u Figmi) ============ -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="currentColor" d="M13 20V7.83l5.59 5.59L20 12l-8-8l-8 8l1.41 1.41L11 7.83V20z"/></symbol>
-    <symbol id="i-chair" viewBox="0 0 24 24"><path fill="currentColor" d="M5.039 19.346q-.214 0-.357-.143q-.144-.143-.144-.357v-1H4q-.846 0-1.423-.577T2 15.846v-5q0-.632.434-1.066q.433-.434 1.066-.434t1.066.434Q5 10.214 5 10.846v3.5h14v-3.5q0-.632.434-1.066q.433-.434 1.066-.434t1.066.434q.434.434.434 1.066v5q0 .846-.577 1.423T20 17.846h-.538v1q0 .194-.134.347t-.328.153q-.213 0-.357-.143q-.143-.144-.143-.357v-1H5.539v1q0 .214-.144.357q-.143.143-.357.143m.962-6v-2.5q0-.932-.559-1.664Q4.883 8.45 4 8.346V7.231q0-.846.577-1.423T6 5.23h12q.846 0 1.423.577T20 7.23v1.115q-.889.1-1.444.828Q18 9.902 18 10.846v2.5z"/></symbol>
-    <symbol id="i-global" viewBox="0 0 24 24"><g fill="currentColor"><path fill-rule="evenodd" d="M2.02783 11.25C2.41136 6.07745 6.72957 2 12.0001 2C11.1693 2 10.4295 2.36421 9.82093 2.92113C9.21541 3.47525 8.70371 4.24878 8.28983 5.16315C7.87352 6.08292 7.55013 7.15868 7.33126 8.32611C7.1558 9.26194 7.04903 10.2485 7.01344 11.25H2.02783ZM2.02783 12.75H7.01344C7.04903 13.7515 7.1558 14.7381 7.33126 15.6739C7.55013 16.8413 7.87351 17.9171 8.28983 18.8368C8.70371 19.7512 9.21541 20.5247 9.82093 21.0789C10.4295 21.6358 11.1693 22 12.0001 22C6.72957 22 2.41136 17.9226 2.02783 12.75Z" clip-rule="evenodd"/><path d="M12.0001 3.39535C11.7251 3.39535 11.3699 3.51236 10.9567 3.89042C10.5406 4.27126 10.1239 4.86815 9.75585 5.68137C9.3902 6.4892 9.09329 7.46441 8.88897 8.55419C8.72806 9.41242 8.62824 10.3222 8.59321 11.25H15.4071C15.372 10.3222 15.2722 9.41242 15.1113 8.5542C14.907 7.46441 14.6101 6.48921 14.2444 5.68137C13.8763 4.86815 13.4597 4.27126 13.0435 3.89042C12.6304 3.51236 12.2751 3.39535 12.0001 3.39535Z"/><path d="M8.88897 15.4458C9.09329 16.5356 9.3902 17.5108 9.75585 18.3186C10.1239 19.1319 10.5406 19.7287 10.9567 20.1096C11.3698 20.4876 11.7251 20.6047 12.0001 20.6047C12.2751 20.6047 12.6304 20.4876 13.0435 20.1096C13.4597 19.7287 13.8763 19.1319 14.2444 18.3186C14.6101 17.5108 14.907 16.5356 15.1113 15.4458C15.2722 14.5876 15.372 13.6778 15.4071 12.75H8.59321C8.62824 13.6778 8.72806 14.5876 8.88897 15.4458Z"/><path d="M12.0001 2C12.831 2 13.5708 2.36421 14.1793 2.92113C14.7849 3.47525 15.2966 4.24878 15.7104 5.16315C16.1267 6.08292 16.4501 7.15868 16.669 8.32612C16.8445 9.26194 16.9512 10.2485 16.9868 11.25H21.9724C21.5889 6.07745 17.2707 2 12.0001 2Z"/><path d="M16.669 15.6739C16.4501 16.8413 16.1267 17.9171 15.7104 18.8368C15.2966 19.7512 14.7849 20.5247 14.1793 21.0789C13.5708 21.6358 12.831 22 12.0001 22C17.2707 22 21.5889 17.9226 21.9724 12.75H16.9868C16.9512 13.7515 16.8445 14.7381 16.669 15.6739Z"/></g></symbol>
-    <symbol id="i-plane" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M13.06.941a1.47 1.47 0 0 0-1.025-.45c-.382-.012-.791.108-1.22.322c-.819.41-1.775 1.2-2.861 2.274c-.852-.48-2.165-1.006-3.403-1.316C3.89 1.606 3.236 1.5 2.678 1.5c-.545 0-1.06.102-1.379.42a.94.94 0 0 0-.279.768c.023.27.142.543.305.804c.326.522.88 1.072 1.455 1.565c.579.496 1.197.95 1.67 1.278c.216.15.402.275.541.366l-.675.675a7.6 7.6 0 0 0-1.915.072c-.719.13-1.482.418-1.8 1.055a.94.94 0 0 0 .046.96c.167.266.449.482.754.656c.556.317 1.275.54 1.82.662c.121.544.344 1.263.661 1.82c.174.304.39.586.657.753c.283.178.614.22.96.047c.636-.318.925-1.082 1.054-1.8c.123-.683.118-1.41.072-1.916L7.3 9.01c.091.139.216.325.367.542c.328.472.781 1.09 1.278 1.67c.493.575 1.042 1.128 1.565 1.454c.26.163.534.282.804.305a.94.94 0 0 0 .768-.279c.318-.318.42-.834.42-1.378c0-.558-.108-1.212-.273-1.874c-.31-1.238-.836-2.551-1.315-3.402c1.074-1.087 1.864-2.043 2.274-2.862c.214-.428.333-.837.321-1.22a1.47 1.47 0 0 0-.45-1.024" clip-rule="evenodd"/></symbol>
-    <symbol id="i-luggage" viewBox="0 0 24 24"><path fill="currentColor" d="M7 21q-.825 0-1.412-.587T5 19V8q0-.825.588-1.412T7 6h2V4q0-.825.588-1.412T11 2h2q.825 0 1.413.588T15 4v2h2q.825 0 1.413.588T19 8v11q0 .825-.587 1.413T17 21q0 .425-.288.713T16 22t-.712-.288T15 21H9q0 .425-.288.713T8 22t-.712-.288T7 21m2-3h2V9H9zm4 0h2V9h-2zM11 6h2V4h-2z"/></symbol>
-    <symbol id="i-pet" viewBox="0 0 14 14"><path fill="currentColor" d="M9.413.002c-1.244.144-1.95 1.507-2.04 2.692c-.147 1.052.313 2.396 1.419 2.638c.958.086 1.72-.815 2.034-1.674c.37-1.075.38-2.51-.517-3.315a1.34 1.34 0 0 0-.896-.34M4.34.06C3.305.133 2.775 1.336 2.847 2.3c.009 1.291.717 2.743 2.01 3.05c.964.103 1.607-.919 1.667-1.813C6.647 2.17 6.04.513 4.668.1A1.1 1.1 0 0 0 4.34.059m8.315 4.145c-1.388.101-2.266 1.581-2.327 2.918c-.073.87.49 1.966 1.437 1.906c1.417-.15 2.27-1.73 2.235-3.1c-.009-.79-.51-1.691-1.345-1.724M.011 6.009C-.118 7.49.919 9.165 2.425 9.258c.913-.061 1.343-1.121 1.238-1.96c-.083-1.238-.91-2.505-1.985-2.67S-.006 5.222.01 6.008m7.148 1.263c-1.412.004-2.702.927-3.393 2.176c-.578.933-1.05 1.99-1.14 3.105c.02.86.84 1.576 1.663 1.405c1.173-.153 2.222-.968 3.443-.815c1.014.081 1.85.868 2.875.856c.994.037 1.567-1.102 1.188-1.995c-.408-1.277-1.199-2.389-2.048-3.39c-.677-.738-1.565-1.374-2.588-1.342"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><path fill="currentColor" d="M15.25 13.5h-4a.75.75 0 0 1-.75-.75v-6a.75.75 0 0 1 1.5 0V12h3.25a.75.75 0 0 1 0 1.5M12 2C6.478 2 2 6.478 2 12s4.478 10 10 10s10-4.478 10-10S17.522 2 12 2"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-dasharray="62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="62;0"/></path></symbol>
-    <symbol id="i-email" viewBox="0 0 24 24"><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"/></symbol>
-  </defs>
-</svg>
+    <!-- ================================ HERO ================================ -->
+    <header class="hero" id="pocetak">
+      <div class="hero__media" aria-hidden="true">
+        <picture>
+          <source srcset="assets/img/hero.webp" type="image/webp" />
+          <img
+            src="assets/img/hero.jpg"
+            alt=""
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+      </div>
 
+      <div class="hero__inner">
+        <nav class="nav" aria-label="Glavna navigacija">
+          <a class="logo" href="#pocetak">Taxi cume</a>
+          <a class="btn btn--yellow nav__cta" href="tel:063408407" data-call>
+            <span class="btn__label">Pozovi odmah</span>
+            <span class="btn__icon"
+              ><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg
+            ></span>
+          </a>
+        </nav>
 
-<!-- ================================ HERO ================================ -->
-<header class="hero" id="pocetak">
-  <div class="hero__media" aria-hidden="true">
-    <picture>
-      <source srcset="assets/img/hero.webp" type="image/webp">
-      <img src="assets/img/hero.jpg" alt="" fetchpriority="high" decoding="async">
-    </picture>
-  </div>
-
-  <div class="hero__inner">
-
-    <nav class="nav" aria-label="Glavna navigacija">
-      <a class="logo" href="#pocetak">Taxi cume</a>
-      <a class="btn btn--yellow nav__cta" href="tel:063408407" data-call>
-        <span class="btn__label">Pozovi odmah</span>
-        <span class="btn__icon"><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg></span>
-      </a>
-    </nav>
-
-    <div class="hero__content">
-      <p class="eyebrow" data-eyebrow>Dobrodošli</p>
-      <h1 class="hero__title" data-title>Cume&nbsp;Taxi <span class="is-yellow">Velika&nbsp;Plana</span></h1>
-      <p class="hero__quote" data-letters>
-        <span class="q">“</span>Putuj <b>duže,</b><br>
-        <span class="hero__quote-indent">putuj<span class="q-semi"> j</span><b>eftinije.</b><span class="q">”</span></span>
-      </p>
-    </div>
-
-    <div class="hero__foot">
-      <p class="hero__lead" data-fade>Vaše pouzdano taxi prevozno sredstvo za sve destinacije. Udobno, sigurno i povoljno</p>
-    </div>
-
-  </div>
-</header>
-
-
-<main>
-
-<!-- ============================== USLUGE ============================== -->
-<section class="services" id="usluge">
-  <div class="container">
-
-    <div class="section-head">
-      <p class="eyebrow" data-eyebrow>Usluge</p>
-      <h2 class="section-title" data-words>Udobno.<br>Sigurno. Povoljno.</h2>
-    </div>
-
-    <ul class="cards">
-
-      <li class="card">
-        <svg class="ico card__ico"><use href="#i-chair"></use></svg>
-        <div class="card__text">
-          <h3 class="card__title">Gradski prevoz</h3>
-          <p class="card__desc">Brzo i sigurno do bilo koje lokacije u gradu.</p>
+        <div class="hero__content">
+          <p class="eyebrow" data-eyebrow>Dobrodošli</p>
+          <h1 class="hero__title" data-title>
+            Cume&nbsp;Taxi <span class="is-yellow">Velika&nbsp;Plana</span>
+          </h1>
+          <p class="hero__quote" data-letters>
+            <span class="q">“</span>Putuj <b>duže,</b><br />
+            <span class="hero__quote-indent"
+              >putuj<span class="q-semi"> j</span><b>eftinije.</b
+              ><span class="q">”</span></span
+            >
+          </p>
         </div>
-        <a class="card__cta" href="tel:063408407" data-call aria-label="Pozovi za gradski prevoz">
-          <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
-        </a>
-      </li>
 
-      <li class="card">
-        <svg class="ico card__ico"><use href="#i-global"></use></svg>
-        <div class="card__text">
-          <h3 class="card__title">Medjunarodni prevoz</h3>
-          <p class="card__desc">Putujte udobno do svih gradova širom srbije.</p>
+        <div class="hero__foot">
+          <p class="hero__lead" data-fade>
+            Vaše pouzdano taxi prevozno sredstvo za sve destinacije. Udobno,
+            sigurno i povoljno
+          </p>
         </div>
-        <a class="card__cta" href="tel:063408407" data-call aria-label="Pozovi za međunarodni prevoz">
-          <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
-        </a>
-      </li>
+      </div>
+    </header>
 
-      <li class="card">
-        <svg class="ico card__ico"><use href="#i-plane"></use></svg>
-        <div class="card__text">
-          <h3 class="card__title">Prevoz do aerodroma</h3>
-          <p class="card__desc">Mogućnost zakazivanja prevoza unapred do aerodroma.</p>
+    <main>
+      <!-- ============================== USLUGE ============================== -->
+      <section class="services" id="usluge">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow" data-eyebrow>Usluge</p>
+            <h2 class="section-title" data-words>
+              Udobno.<br />Sigurno. Povoljno.
+            </h2>
+          </div>
+
+          <ul class="cards">
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-chair"></use></svg>
+              <div class="card__text">
+                <h3 class="card__title">Gradski prevoz</h3>
+                <p class="card__desc">
+                  Brzo i sigurno do bilo koje lokacije u gradu.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="tel:063408407"
+                data-call
+                aria-label="Pozovi za gradski prevoz"
+              >
+                <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
+              </a>
+            </li>
+
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-global"></use></svg>
+              <div class="card__text">
+                <h3 class="card__title">Medjunarodni prevoz</h3>
+                <p class="card__desc">
+                  Putujte udobno do svih gradova širom srbije.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="tel:063408407"
+                data-call
+                aria-label="Pozovi za međunarodni prevoz"
+              >
+                <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
+              </a>
+            </li>
+
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-plane"></use></svg>
+              <div class="card__text">
+                <h3 class="card__title">Prevoz do aerodroma</h3>
+                <p class="card__desc">
+                  Mogućnost zakazivanja prevoza unapred do aerodroma.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="tel:063408407"
+                data-call
+                aria-label="Pozovi za prevoz do aerodroma"
+              >
+                <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
+              </a>
+            </li>
+
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-luggage"></use></svg>
+              <div class="card__text">
+                <h3 class="card__title">Prevoz prtljaga</h3>
+                <p class="card__desc">
+                  Siguran transport vašeg prtljaga na svakoj lokaciji
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="tel:063408407"
+                data-call
+                aria-label="Pozovi za prevoz prtljaga"
+              >
+                <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
+              </a>
+            </li>
+
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-pet"></use></svg>
+              <div class="card__text">
+                <h3 class="card__title">Pet friendly</h3>
+                <p class="card__desc">
+                  Siguran i udoban prevoz vaših ljubimaca.
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="tel:063408407"
+                data-call
+                aria-label="Pozovi za prevoz ljubimaca"
+              >
+                <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
+              </a>
+            </li>
+
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-clock"></use></svg>
+              <div class="card__text">
+                <h3 class="card__title">24/7 dostupnost</h3>
+                <p class="card__desc">
+                  Tu smo za vas 24 sata dnevno, 7 dana u nedelji
+                </p>
+              </div>
+              <a
+                class="card__cta"
+                href="tel:063408407"
+                data-call
+                aria-label="Pozovi bilo kada"
+              >
+                <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="services__cta">
+            <a class="btn btn--yellow" href="tel:063408407" data-call>
+              <span class="btn__label">Pozovi odmah</span>
+              <span class="btn__icon"
+                ><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg
+              ></span>
+            </a>
+          </div>
         </div>
-        <a class="card__cta" href="tel:063408407" data-call aria-label="Pozovi za prevoz do aerodroma">
-          <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
-        </a>
-      </li>
+      </section>
 
-      <li class="card">
-        <svg class="ico card__ico"><use href="#i-luggage"></use></svg>
-        <div class="card__text">
-          <h3 class="card__title">Prevoz prtljaga</h3>
-          <p class="card__desc">Siguran transport vašeg prtljaga na svakoj lokaciji</p>
+      <!-- ============================== BANNER ============================== -->
+      <section class="banner" id="pogodnosti">
+        <div class="banner__media" aria-hidden="true">
+          <picture>
+            <source srcset="assets/img/banner.webp" type="image/webp" />
+            <img
+              src="assets/img/banner.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
-        <a class="card__cta" href="tel:063408407" data-call aria-label="Pozovi za prevoz prtljaga">
-          <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
-        </a>
-      </li>
+        <div class="banner__scrim" aria-hidden="true"></div>
 
-      <li class="card">
-        <svg class="ico card__ico"><use href="#i-pet"></use></svg>
-        <div class="card__text">
-          <h3 class="card__title">Pet friendly</h3>
-          <p class="card__desc">Siguran i udoban prevoz vaših ljubimaca.</p>
+        <div class="banner__inner">
+          <p class="eyebrow eyebrow--yellow" data-eyebrow>za duža putovanja</p>
+          <h2 class="banner__title" data-banner-title>
+            Što duže putuješ,<br /><span class="is-yellow">MANJE PLAĆAŠ</span>
+          </h2>
+          <p class="banner__lead" data-fade>
+            Posebne pogodnost i popusti za duža putovanja.<br />Više kilometara
+            — manja cena
+          </p>
+          <a class="btn btn--onbanner" href="tel:063408407" data-call>
+            <span class="btn__label">Pozovi odmah</span>
+            <span class="btn__icon"
+              ><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg
+            ></span>
+          </a>
         </div>
-        <a class="card__cta" href="tel:063408407" data-call aria-label="Pozovi za prevoz ljubimaca">
-          <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
-        </a>
-      </li>
+      </section>
 
-      <li class="card">
-        <svg class="ico card__ico"><use href="#i-clock"></use></svg>
-        <div class="card__text">
-          <h3 class="card__title">24/7 dostupnost</h3>
-          <p class="card__desc">Tu smo za vas 24 sata dnevno, 7 dana u nedelji</p>
+      <!-- ============================ LOKACIJE ============================ -->
+      <section class="locations" id="lokacije">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow" data-eyebrow>Lokacija</p>
+            <h2 class="section-title" data-rise>Gde nas možete pronaći</h2>
+          </div>
+
+          <div class="locations__grid">
+            <article class="loc">
+              <div class="loc__map">
+                <iframe
+                  title="Mapa — Centar Velika Plana"
+                  src="https://maps.google.com/maps?q=44.3325,21.0757&z=13&hl=sr&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3 class="loc__title" data-rise>Adresa : Centar Velika Plana</h3>
+              <p class="loc__meta">
+                Phone: <a href="tel:063408407" data-call>063/408-407</a>
+              </p>
+              <a class="btn btn--yellow" href="tel:063408407" data-call>
+                <span class="btn__label">Pozovi odmah</span>
+                <span class="btn__icon"
+                  ><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg
+                ></span>
+              </a>
+            </article>
+
+            <article class="loc">
+              <div class="loc__map">
+                <iframe
+                  title="Mapa — Centar Krnjevo"
+                  src="https://maps.google.com/maps?q=44.4071,21.0472&z=15&hl=sr&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3 class="loc__title" data-rise>Adresa : Centar Krnjevo</h3>
+              <p class="loc__meta">
+                Phone: <a href="tel:063408407" data-call>063/408-407</a>
+              </p>
+              <a class="btn btn--yellow" href="tel:063408407" data-call>
+                <span class="btn__label">Pozovi odmah</span>
+                <span class="btn__icon"
+                  ><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg
+                ></span>
+              </a>
+            </article>
+          </div>
         </div>
-        <a class="card__cta" href="tel:063408407" data-call aria-label="Pozovi bilo kada">
-          <svg class="ico ico--arrow"><use href="#i-arrow"></use></svg>
-        </a>
-      </li>
+      </section>
+    </main>
 
-    </ul>
+    <!-- ============================== FOOTER ============================== -->
+    <footer class="footer" id="kontakt">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__logo">Taxi cume</p>
+          <p class="footer__slogan">Što duže putuješ<br />MANJE PLAĆAŠ</p>
+          <p class="footer__desc">
+            Vaše pouzdano taxi prevozno sredstvo za sve destinacije. Udobno,
+            sigurno i povoljno.
+          </p>
+        </div>
 
-    <div class="services__cta">
-      <a class="btn btn--yellow" href="tel:063408407" data-call>
-        <span class="btn__label">Pozovi odmah</span>
-        <span class="btn__icon"><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg></span>
-      </a>
-    </div>
+        <div class="footer__contact">
+          <p class="footer__heading">Kontakt</p>
+          <ul class="footer__list">
+            <li>
+              <svg class="ico footer__ico"><use href="#i-phone"></use></svg>
+              <a href="tel:063408407" data-call>063/408-407</a>
+            </li>
+            <li>
+              <svg class="ico footer__ico"><use href="#i-phone"></use></svg>
+              <a href="tel:063408407" data-call>063/408-407</a>
+            </li>
+            <li>
+              <svg class="ico footer__ico"><use href="#i-email"></use></svg>
+              <a href="mailto:cumetaxi@gmail.com">cumetaxi@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-  </div>
-</section>
-
-
-<!-- ============================== BANNER ============================== -->
-<section class="banner" id="pogodnosti">
-  <div class="banner__media" aria-hidden="true">
-    <picture>
-      <source srcset="assets/img/banner.webp" type="image/webp">
-      <img src="assets/img/banner.jpg" alt="" loading="lazy" decoding="async">
-    </picture>
-  </div>
-  <div class="banner__scrim" aria-hidden="true"></div>
-
-  <div class="banner__inner">
-    <p class="eyebrow eyebrow--yellow" data-eyebrow>za duža putovanja</p>
-    <h2 class="banner__title" data-banner-title>Što duže putuješ,<br><span class="is-yellow">MANJE PLAĆAŠ</span></h2>
-    <p class="banner__lead" data-fade>Posebne pogodnost i popusti za duža putovanja.<br>Više kilometara — manja cena</p>
-    <a class="btn btn--onbanner" href="tel:063408407" data-call>
-      <span class="btn__label">Pozovi odmah</span>
-      <span class="btn__icon"><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg></span>
+    <!-- Lebdeće dugme za poziv — samo na telefonu -->
+    <a class="fab" href="tel:063408407" data-call aria-label="Pozovi Cume Taxi">
+      <svg class="ico"><use href="#i-phone"></use></svg>
+      <span>Pozovi</span>
     </a>
-  </div>
-</section>
 
-
-<!-- ============================ LOKACIJE ============================ -->
-<section class="locations" id="lokacije">
-  <div class="container">
-
-    <div class="section-head">
-      <p class="eyebrow" data-eyebrow>Lokacija</p>
-      <h2 class="section-title" data-rise>Gde nas možete pronaći</h2>
-    </div>
-
-    <div class="locations__grid">
-
-      <article class="loc">
-        <div class="loc__map">
-          <iframe
-            title="Mapa — Centar Velika Plana"
-            src="https://maps.google.com/maps?q=44.3325,21.0757&z=13&hl=sr&output=embed"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
-        </div>
-        <h3 class="loc__title" data-rise>Adresa : Centar Velika Plana</h3>
-        <p class="loc__meta">Phone: <a href="tel:063408407" data-call>063/408-407</a></p>
-        <a class="btn btn--yellow" href="tel:063408407" data-call>
-          <span class="btn__label">Pozovi odmah</span>
-          <span class="btn__icon"><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg></span>
-        </a>
-      </article>
-
-      <article class="loc">
-        <div class="loc__map">
-          <iframe
-            title="Mapa — Centar Krnjevo"
-            src="https://maps.google.com/maps?q=44.4071,21.0472&z=15&hl=sr&output=embed"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
-        </div>
-        <h3 class="loc__title" data-rise>Adresa : Centar Krnjevo</h3>
-        <p class="loc__meta">Phone: <a href="tel:063408407" data-call>063/408-407</a></p>
-        <a class="btn btn--yellow" href="tel:063408407" data-call>
-          <span class="btn__label">Pozovi odmah</span>
-          <span class="btn__icon"><svg class="ico ico--arrow"><use href="#i-arrow"></use></svg></span>
-        </a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-</main>
-
-
-<!-- ============================== FOOTER ============================== -->
-<footer class="footer" id="kontakt">
-  <div class="footer__inner">
-
-    <div class="footer__brand">
-      <p class="footer__logo">Taxi cume</p>
-      <p class="footer__slogan">Što duže putuješ<br>MANJE PLAĆAŠ</p>
-      <p class="footer__desc">Vaše pouzdano taxi prevozno sredstvo za sve destinacije. Udobno, sigurno i povoljno.</p>
-    </div>
-
-    <div class="footer__contact">
-      <p class="footer__heading">Kontakt</p>
-      <ul class="footer__list">
-        <li>
-          <svg class="ico footer__ico"><use href="#i-phone"></use></svg>
-          <a href="tel:063408407" data-call>063/408-407</a>
-        </li>
-        <li>
-          <svg class="ico footer__ico"><use href="#i-phone"></use></svg>
-          <a href="tel:063408407" data-call>063/408-407</a>
-        </li>
-        <li>
-          <svg class="ico footer__ico"><use href="#i-email"></use></svg>
-          <a href="mailto:cumetaxi@gmail.com">cumetaxi@gmail.com</a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-</footer>
-
-
-<!-- Lebdeće dugme za poziv — samo na telefonu -->
-<a class="fab" href="tel:063408407" data-call aria-label="Pozovi Cume Taxi">
-  <svg class="ico"><use href="#i-phone"></use></svg>
-  <span>Pozovi</span>
-</a>
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
